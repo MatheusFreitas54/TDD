@@ -22,53 +22,72 @@ A estrutura do projeto segue uma organização simples para práticas de TDD:
 src/               # Código principal do projeto
 tests/             # Testes automatizados com PHPUnit
 composer.json      # Arquivo de dependências do Composer
-Requisitos
+```
+
+---
+
+## Requisitos
+
 Antes de iniciar, certifique-se de que você tenha os seguintes softwares instalados:
 
-PHP (versão 8.0 ou superior)
+- **PHP** (versão 8.0 ou superior)
+- **Composer** (gestor de dependências do PHP)
 
-Composer (gestor de dependências do PHP)
+### Instalação do Composer
 
-Instalação do Composer
-Caso ainda não tenha o Composer instalado, siga as instruções no site oficial: https://getcomposer.org/
+Caso ainda não tenha o Composer instalado, siga as instruções no site oficial: [https://getcomposer.org/](https://getcomposer.org/)
 
-Configuração do Projeto
-Clonando o Repositório
+---
+
+## Configuração do Projeto
+
+### Clonando o Repositório
+
 Clone este repositório para sua máquina local:
 
-bash
+```bash
 git clone https://github.com/seu-usuario/seu-repositorio.git
 cd seu-repositorio
-Instalando Dependências
+```
+
+### Instalando Dependências
+
 Execute o seguinte comando para instalar as dependências:
 
-bash
+```bash
 composer install
-Testes
-O projeto utiliza o PHPUnit para criar e executar testes automatizados. Para executar os testes, use o comando:
+```
 
-bash
+---
+
+## Testes
+
+O projeto utiliza o **PHPUnit** para criar e rodar testes automatizados. Para executar os testes, use o comando:
+
+```bash
 vendor/bin/phpunit
-Os arquivos de teste estão localizados na pasta tests/. Certifique-se de que todos os novos recursos desenvolvidos estejam devidamente cobertos por testes.
+```
 
-Configuração do PHPUnit
-O arquivo phpunit.xml contém as configurações para o PHPUnit. Caso necessário, edite-o para ajustar às necessidades do seu projeto.
+Os arquivos de teste estão localizados na pasta `tests/`. Certifique-se de que todos os novos recursos desenvolvidos estejam devidamente cobertos por testes.
 
-Conceitos Estudados
-Test-Driven Development (TDD)
+### Configuração do PHPUnit
 
-Escrever testes antes de implementar o código.
+O arquivo `phpunit.xml` contém as configurações para o PHPUnit. Caso necessário, edite-o para ajustar às necessidades do seu projeto.
 
-Garantir que o código seja testável e sustentável.
+---
 
-Composer
+## Conceitos Estudados
 
-Gestão de dependências.
+### Test-Driven Development (TDD)
+- Escrever testes antes de implementar o código.
+- Garantir que o código seja testável e sustentável.
 
-Autoloading com PSR-4.
+### Composer
+- Gestão de dependências
+- Autoloading com PSR-4
 
-PHPUnit
+### PHPUnit
+- Criação de testes unitários e de integração
+- Execução de testes e relatórios de cobertura
 
-Criação de testes unitários e de integração.
-
-Execução de testes e relatórios de cobertura.
+---
